@@ -8,49 +8,86 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- Header -->
-  <header class="bg-gray-900 text-white text-center py-6">
-    <h1 class="text-3xl font-bold">Hi, I'm Guruseenivasan 👋</h1>
-    <p class="text-lg">UI/UX Designer & Frontend Developer</p>
-    <nav class="mt-4 space-x-6">
-      <a href="#about" class="hover:text-yellow-400">About</a>
-      <a href="#projects" class="hover:text-yellow-400">Projects</a>
-      <a href="#contact" class="hover:text-yellow-400">Contact</a>
-    </nav>
+  
+  <!-- Navbar -->
+  <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <h1 class="text-xl font-bold">Guruseenivasan</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#about" class="hover:text-yellow-400 transition">About</a>
+        <a href="#projects" class="hover:text-yellow-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center py-20">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Hi, I'm Guruseenivasan 👋</h2>
+    <p class="text-lg md:text-xl mb-6">UI/UX Designer & Frontend Developer</p>
+    <a href="#projects" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+      View My Work
+    </a>
+  </section>
+
   <!-- About Section -->
-  <section id="about" class="max-w-3xl mx-auto p-8">
-    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-    <p>
-      Passionate UI/UX Designer with 2 years of experience building intuitive and user-friendly digital experiences.
+  <section id="about" class="max-w-4xl mx-auto p-8 text-center">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-lg leading-relaxed">
+      I’m a passionate <span class="font-semibold text-indigo-600">UI/UX Designer</span> with 2 years of experience creating 
+      intuitive and user-friendly digital products. I specialize in Figma, Tailwind CSS, and responsive design, 
+      and I love turning ideas into engaging experiences that solve real-world problems.
     </p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="bg-gray-100 py-10">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-2xl font-semibold mb-6">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white shadow-lg rounded-xl p-6">
-          <h3 class="text-xl font-bold mb-2">Appointment Scheduling Platform</h3>
-          <p>Designed user flows, wireframes, and prototypes in Figma, built responsive UI with Tailwind CSS.</p>
+  <section id="projects" class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-2xl transition">
+          <h3 class="text-xl font-bold mb-2 text-indigo-600">Appointment Scheduling Platform</h3>
+          <p class="text-gray-700">Designed user flows, wireframes, and prototypes in Figma. 
+          Built responsive UI with Tailwind CSS for seamless scheduling experiences.</p>
         </div>
-        <div class="bg-white shadow-lg rounded-xl p-6">
-          <h3 class="text-xl font-bold mb-2">Healthcare Management System</h3>
-          <p>Built accessible dashboards and admin panels focusing on usability for medical staff.</p>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-2xl transition">
+          <h3 class="text-xl font-bold mb-2 text-indigo-600">Healthcare Management System</h3>
+          <p class="text-gray-700">Created accessible dashboards and admin panels, focusing 
+          on usability and clear workflows for healthcare staff.</p>
         </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-2xl transition">
+          <h3 class="text-xl font-bold mb-2 text-indigo-600">Email Campaigns</h3>
+          <p class="text-gray-700">Designed responsive email templates with HTML/CSS, optimized 
+          for high engagement and brand consistency.</p>
+        </div>
+        
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="max-w-3xl mx-auto p-8 text-center">
-    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-    <p>Email: <a href="mailto:seenivivek@gmail.com" class="text-blue-600 underline">seenivivek@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/guruseenivasan-v-a760a1235" class="text-blue-600 underline">linkedin.com/in/guruseenivasan-v</a></p>
+  <section id="contact" class="max-w-4xl mx-auto p-12 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <p class="mb-4 text-lg">Let’s connect! You can reach me via email or LinkedIn.</p>
+    <div class="space-x-4">
+      <a href="mailto:seenivivek@gmail.com" 
+         class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-500 transition">
+        📧 Email Me
+      </a>
+      <a href="https://linkedin.com/in/guruseenivasan-v-a760a1235" target="_blank"
+         class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-500 transition">
+        🔗 LinkedIn
+      </a>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-4">
+    <p>© 2025 Guruseenivasan. Built with ❤️ using Tailwind CSS.</p>
+  </footer>
+
 </body>
 </html>
-
-
