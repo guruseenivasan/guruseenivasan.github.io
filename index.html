@@ -1,93 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guruseenivasan | Portfolio</title>
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guruseenivasan V - UI/UX Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --background: #ffffff;
+            --foreground: #1f2937;
+            --card: #f8fafc;
+            --card-foreground: #374151;
+            --primary: #374151;
+            --primary-foreground: #ffffff;
+            --secondary: #6366f1;
+            --secondary-foreground: #ffffff;
+            --muted: #f8fafc;
+            --muted-foreground: #1f2937;
+            --accent: #6366f1;
+            --accent-foreground: #ffffff;
+            --border: #e5e7eb;
+        }
+        
+        .font-work-sans { font-family: 'Work Sans', sans-serif; }
+        .font-open-sans { font-family: 'Open Sans', sans-serif; }
+        
+        .skill-bar {
+            background: linear-gradient(90deg, var(--accent) 0%, var(--secondary) 100%);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  
-  <!-- Navbar -->
-  <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
-      <h1 class="text-xl font-bold">Guruseenivasan</h1>
-      <nav class="space-x-6 text-lg">
-        <a href="#about" class="hover:text-yellow-400 transition">About</a>
-        <a href="#projects" class="hover:text-yellow-400 transition">Projects</a>
-        <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center py-20">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Hi, I'm Guruseenivasan 👋</h2>
-    <p class="text-lg md:text-xl mb-6">UI/UX Designer & Frontend Developer</p>
-    <a href="#projects" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
-      View My Work
-    </a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="max-w-4xl mx-auto p-8 text-center">
-    <h2 class="text-3xl font-bold mb-6">About Me</h2>
-    <p class="text-lg leading-relaxed">
-      I’m a passionate <span class="font-semibold text-indigo-600">UI/UX Designer</span> with 2 years of experience creating 
-      intuitive and user-friendly digital products. I specialize in Figma, Tailwind CSS, and responsive design, 
-      and I love turning ideas into engaging experiences that solve real-world problems.
-    </p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="bg-gray-100 py-16">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-2xl transition">
-          <h3 class="text-xl font-bold mb-2 text-indigo-600">Appointment Scheduling Platform</h3>
-          <p class="text-gray-700">Designed user flows, wireframes, and prototypes in Figma. 
-          Built responsive UI with Tailwind CSS for seamless scheduling experiences.</p>
+<body class="font-open-sans bg-white text-gray-800 leading-relaxed">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center animate-fade-in">
+            <h1 class="font-work-sans text-5xl md:text-6xl font-bold mb-4">Guruseenivasan V</h1>
+            <p class="text-xl md:text-2xl mb-6 text-gray-200">UI/UX Developer</p>
+            <p class="text-lg max-w-2xl mx-auto text-gray-300">Creating intuitive, responsive, and user-friendly digital experiences with 2 years of expertise</p>
+            
+            <!-- Contact Info -->
+            <div class="flex flex-wrap justify-center gap-6 mt-8 text-sm">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-blue-400"></i>
+                    <span>seenivivek@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-phone text-blue-400"></i>
+                    <span>9025133060</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-blue-400"></i>
+                    <span>Madurai</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fab fa-linkedin text-blue-400"></i>
+                    <a href="https://linkedin.com/in/guruseenivasan-v-a760a1235" class="hover:text-blue-300 transition-colors">LinkedIn Profile</a>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-2xl transition">
-          <h3 class="text-xl font-bold mb-2 text-indigo-600">Healthcare Management System</h3>
-          <p class="text-gray-700">Created accessible dashboards and admin panels, focusing 
-          on usability and clear workflows for healthcare staff.</p>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Profile Section -->
+        <section class="mb-16 animate-fade-in">
+            <div class="bg-gray-50 rounded-lg p-8 hover-lift">
+                <h2 class="font-work-sans text-3xl font-bold text-gray-700 mb-6 flex items-center gap-3">
+                    <i class="fas fa-user text-blue-500"></i>
+                    Profile
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    UI/UX Designer with 2 years of experience in creating intuitive, responsive, and user-friendly digital experiences. Skilled in Figma (Auto Layout, prototyping, and design systems), along with HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS. Experienced in collaborating with cross-functional teams to translate business goals and user needs into modern, accessible, and visually engaging interfaces. Strong understanding of user research, wireframing, prototyping, accessibility guidelines, and building scalable design solutions. Passionate about solving complex design problems with creativity, curiosity, and a user-centered approach.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-16 animate-fade-in">
+            <h2 class="font-work-sans text-3xl font-bold text-gray-700 mb-8 flex items-center gap-3">
+                <i class="fas fa-code text-blue-500"></i>
+                Skills & Expertise
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Design & Prototyping -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover-lift">
+                    <h3 class="font-work-sans text-xl font-semibold text-gray-700 mb-4">Design & Prototyping</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">Figma</span>
+                            <span class="text-blue-500 font-semibold">Proficient</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-bar h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">Photopea</span>
+                            <span class="text-blue-500 font-semibold">Competent</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-bar h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover-lift">
+                    <h3 class="font-work-sans text-xl font-semibold text-gray-700 mb-4">Frontend Development</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">HTML5 & CSS3</span>
+                            <span class="text-blue-500 font-semibold">Proficient</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-bar h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">JavaScript</span>
+                            <span class="text-blue-500 font-semibold">Competent</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-bar h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">Bootstrap & Tailwind</span>
+                            <span class="text-blue-500 font-semibold">Competent</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-bar h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Competencies -->
+            <div class="mt-8 bg-white border border-gray-200 rounded-lg p-6 hover-lift">
+                <h3 class="font-work-sans text-xl font-semibold text-gray-700 mb-4">UI/UX Competencies</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Accessibility</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">User Flows</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Visualization</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Git & GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="mb-16 animate-fade-in">
+            <h2 class="font-work-sans text-3xl font-bold text-gray-700 mb-8 flex items-center gap-3">
+                <i class="fas fa-briefcase text-blue-500"></i>
+                Professional Experience
+            </h2>
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-8 hover-lift">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <div>
+                        <h3 class="font-work-sans text-2xl font-semibold text-gray-700">UI/UX Designer</h3>
+                        <p class="text-blue-600 font-medium">Purplematics Technologies, Madurai</p>
+                    </div>
+                    <div class="text-gray-500 font-medium">May 2023 - Present</div>
+                </div>
+                
+                <h4 class="font-work-sans text-lg font-semibold text-gray-600 mb-3">Online Appointment Scheduling Platform</h4>
+                
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    As a UI/UX Developer with two years of experience, I specialize in designing and delivering end-to-end digital experiences, from user research and wireframing to prototyping and front-end implementation. In my current role, I lead the design of an online appointment scheduling platform, collaborating closely with product managers, backend developers, and cross-functional teams to ensure a seamless user journey.
+                </p>
+                
+                <p class="text-gray-600 leading-relaxed">
+                    I focus on accessibility, usability, and responsive design, making scheduling effortless for both individuals and enterprise (B2B) users. Beyond product design, I have also contributed to creating targeted, user-friendly email campaigns, ensuring consistent branding and engagement. By combining design thinking, technical expertise, and a user-centered mindset, I deliver solutions that balance business objectives with intuitive, visually appealing interfaces.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-16 animate-fade-in">
+            <h2 class="font-work-sans text-3xl font-bold text-gray-700 mb-8 flex items-center gap-3">
+                <i class="fas fa-project-diagram text-blue-500"></i>
+                Featured Project
+            </h2>
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-8 hover-lift">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <h3 class="font-work-sans text-2xl font-semibold text-gray-700">Online Appointment and Event Scheduling Platform</h3>
+                    <div class="text-gray-500 font-medium">May 2023 - Present</div>
+                </div>
+                
+                <div class="space-y-4 text-gray-600">
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <p>Designed and developed a user-friendly appointment and event scheduling platform, focusing on simplifying the booking process for users across multiple industries.</p>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <p>Created user flows, wireframes, and interactive prototypes in Figma to validate design decisions and ensure a seamless user journey.</p>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <p>Defined and presented design rationale, balancing business requirements with usability and technical feasibility.</p>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <p>Collaborated with backend developers to integrate intuitive UI components with secure data handling and smooth system performance.</p>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <p>Ensured designs adhered to accessibility guidelines and were responsive across devices, improving usability for diverse user groups.</p>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <p>Utilized Figma and Photopea to deliver high-quality visuals that enhanced brand communication and strengthened the overall user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-16 animate-fade-in">
+            <h2 class="font-work-sans text-3xl font-bold text-gray-700 mb-8 flex items-center gap-3">
+                <i class="fas fa-graduation-cap text-blue-500"></i>
+                Education
+            </h2>
+            
+            <div class="bg-white border border-gray-200 rounded-lg p-8 hover-lift">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <h3 class="font-work-sans text-xl font-semibold text-gray-700">Bachelor of Computer Science</h3>
+                        <p class="text-blue-600 font-medium">N.M.S.S.Vellaichamy Nadar College, Madurai</p>
+                    </div>
+                    <div class="text-gray-500 font-medium">75%</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white py-8 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-300 mb-4">Let's create something amazing together!</p>
+            <div class="flex justify-center gap-6">
+                <a href="mailto:seenivivek@gmail.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/guruseenivasan-v-a760a1235" class="text-blue-400 hover:text-blue-300 transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="tel:9025133060" class="text-blue-400 hover:text-blue-300 transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm mt-4">&copy; 2024 Guruseenivasan V. All rights reserved.</p>
         </div>
-
-        <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 hover:shadow-2xl transition">
-          <h3 class="text-xl font-bold mb-2 text-indigo-600">Email Campaigns</h3>
-          <p class="text-gray-700">Designed responsive email templates with HTML/CSS, optimized 
-          for high engagement and brand consistency.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="max-w-4xl mx-auto p-12 text-center">
-    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-    <p class="mb-4 text-lg">Let’s connect! You can reach me via email or LinkedIn.</p>
-    <div class="space-x-4">
-      <a href="mailto:seenivivek@gmail.com" 
-         class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-500 transition">
-        📧 Email Me
-      </a>
-      <a href="https://linkedin.com/in/guruseenivasan-v-a760a1235" target="_blank"
-         class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-500 transition">
-        🔗 LinkedIn
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 text-center py-4">
-    <p>© 2025 Guruseenivasan. Built with ❤️ using Tailwind CSS.</p>
-  </footer>
-
+    </footer>
 </body>
 </html>
